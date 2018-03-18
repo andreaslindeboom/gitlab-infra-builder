@@ -7,6 +7,7 @@ RUN apt-get update -y && \
     apt-get update -y && \
     apt-get install -y git ansible ruby ruby-dev curl && \
     gem install serverspec && \
+    gem install kitchen-terraform --version 3.1.0 && \
     git clone https://github.com/kamatama41/tfenv.git /opt/tfenv && \
     ln -s /opt/tfenv/bin/* /usr/local/bin && \
     rm -rf /var/lib/apt/lists/*
