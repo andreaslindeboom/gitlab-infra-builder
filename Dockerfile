@@ -7,7 +7,7 @@ RUN apt-get update -y && \
     echo "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" >> /etc/apt/sources.list && \
     echo "deb http://packages.cloud.google.com/apt cloud-sdk-stretch main" >> /etc/apt/sources.list.d/google-cloud-sdk.list && \
     apt-get update -y && \
-    apt-get install -y ansible ruby ruby-dev google-cloud-sdk && \
+    apt-get install -y ansible ruby ruby-dev google-cloud-sdk kubectl && \
     gem install test-kitchen kitchen-ssh && \
     gem install kitchen-inspec -v 0.22.0 && \
     git clone https://github.com/kamatama41/tfenv.git /opt/tfenv && \
