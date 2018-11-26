@@ -9,6 +9,7 @@ RUN apt-get update -y && \
     apt-get update -y && \
     apt-get install -y ansible ruby ruby-dev google-cloud-sdk kubectl && \
     gem install test-kitchen kitchen-ssh && \
+    gem install kitchen-terraform --version 4.0.0 && \
     gem install kitchen-inspec -v 0.22.0 && \
     git clone https://github.com/kamatama41/tfenv.git /opt/tfenv && \
     ln -s /opt/tfenv/bin/* /usr/local/bin && \
