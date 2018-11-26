@@ -12,5 +12,6 @@ RUN apt-get update -y && \
     gem install kitchen-terraform --version 4.0.0 && \
     gem install kitchen-inspec -v 0.22.0 && \
     git clone https://github.com/kamatama41/tfenv.git /opt/tfenv && \
+    tfenv install 0.11.10 && \
     ln -s /opt/tfenv/bin/* /usr/local/bin && \
     rm -rf /var/lib/apt/lists/*
